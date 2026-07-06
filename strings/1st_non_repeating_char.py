@@ -15,6 +15,7 @@ for i in items:
 wow = og[0]
 print(f"The first non repeating char is '{wow}'.")
 
+
 """
 Problem:
 Find the first non-repeating character in a string.
@@ -32,7 +33,5 @@ Edge Cases:
 - String with all repeating characters
 
 Date Solved:
-03 JULY 2026
+03JULY 2026
 """
-
-
