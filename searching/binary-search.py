@@ -1,25 +1,21 @@
-a = [2, 5, 8, 11, 15, 19, 24, 30]
-x = 20
+a = list(map(int, input("Enter the sorted array elements separated by space: ").split()))
+x = int(input("Enter the element to search for: "))
 
-def binary(a):
-    left = 0 
-    right = len(a)-1
-    while(True):
+def binary(a, x):
+    left = 0
+    right = len(a) - 1
+    while(left <= right):
         mid = (left + right) // 2
         if a[mid] == x:
             print(f"Element found at index {mid}")
-            break
-        else:
-            print("Element not found")
-            break
-        
+            return
         if a[mid] < x:
             left = mid +1
             
         else:
             right = mid - 1
             
-binary(a)
+binary(a, x)
 """
 Problem:
 Binary Search in a Sorted Array
